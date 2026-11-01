@@ -276,9 +276,11 @@ def get_analytics():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-
 def get_db_connection():
     """Get database connection."""
+    db_directory = os.path.dirname(os.path.abspath(DATABASE_PATH))
+    os.makedirs(db_directory, exist_ok=True)
+
     conn = sqlite3.connect(DATABASE_PATH)
     conn.row_factory = sqlite3.Row
     return conn
