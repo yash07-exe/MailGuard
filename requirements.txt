@@ -1,25 +1,17 @@
-# MailGuard - Requirements File
 
-# Flask Web Framework
 Flask==2.3.3
+gunicorn==23.0.0
 
-# Google API Client
 google-auth==2.21.0
 google-auth-oauthlib==0.4.6
 google-auth-httplib2==0.1.1
 google-api-python-client==2.99.0
 
-# Machine Learning
-scikit-learn==1.3.2
-numpy==1.24.3
-joblib==1.3.2
+scikit-learn==1.5.2
+numpy==1.26.4
+scipy==1.13.1
+joblib==1.4.2
 
-# Web Dependencies
 python-dotenv==1.0.0
-
-
-# Email Processing
 email-validator==2.0.0
-
-# Utility Dependencies
 werkzeug==2.3.7
