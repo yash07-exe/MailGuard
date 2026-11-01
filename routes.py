@@ -1,5 +1,4 @@
 """MailGuard Flask Routes"""
-
 import os
 import re
 import sqlite3
